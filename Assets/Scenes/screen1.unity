@@ -6805,10 +6805,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316404563}
-        m_TargetAssemblyTypeName: buttonMenu, Assembly-CSharp
-        m_MethodName: loadSceen
-        m_Mode: 5
+      - m_Target: {fileID: 2093034934}
+        m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+        m_MethodName: ReplayGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -43859,7 +43859,7 @@ Transform:
   m_GameObject: {fileID: 914755586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.76, y: -8.37, z: -10}
+  m_LocalPosition: {x: -8.1, y: -2.77, z: -10}
   m_LocalScale: {x: 0.575, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48147,7 +48147,7 @@ Transform:
   m_GameObject: {fileID: 1774582240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.76, y: -8.37, z: 0}
+  m_LocalPosition: {x: -8.1, y: -2.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48825,7 +48825,7 @@ Transform:
   m_GameObject: {fileID: 1931031035}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.76, y: -8.37, z: -10}
+  m_LocalPosition: {x: -8.1, y: -2.77, z: -10}
   m_LocalScale: {x: 0.8875, y: 0.9125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

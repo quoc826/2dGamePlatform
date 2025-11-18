@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 [AddComponentMenu("Manager/gameManager/Qani")]
 public class gameManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class gameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
 
+        
         
     }
     
@@ -55,6 +57,15 @@ public class gameManager : MonoBehaviour
     {
         
         gameWinPanel.SetActive(true);
+    }
+
+
+    public void ReplayGame()
+    {
+        // 1. Lấy tên Scene đang hoạt động
+        string currentSceneName = SceneManager.GetActiveScene().name; 
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(currentSceneName);   
     }
 
     // Update is called once per frame
