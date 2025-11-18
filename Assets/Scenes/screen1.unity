@@ -48193,8 +48193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eadeabcd183f81498143b36e6c02563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  health: 10000
-  currentHealth: 10000
+  health: 200
+  currentHealth: 200
   isDead: 0
   anim: {fileID: 0}
   deadAnimation: 0

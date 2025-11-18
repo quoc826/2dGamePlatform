@@ -994,7 +994,7 @@ MonoBehaviour:
   musicBackground: {fileID: 0}
   musicBackgroundMenu: {fileID: 1602112887}
   buttonSound: {fileID: 0}
-  gunSound: {fileID: 0}
+  gunSound: {fileID: 1602112887}
 --- !u!82 &1602112887
 AudioSource:
   m_ObjectHideFlags: 0

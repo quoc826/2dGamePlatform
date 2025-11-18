@@ -49,24 +49,17 @@ public class gameManager : MonoBehaviour
 
     public void gameOver()
     {
-        Time.timeScale = 0f;
+        
         gameOverPanel.SetActive(true);
     }
 
     public void gameWin()
     {
-        
         gameWinPanel.SetActive(true);
     }
 
 
-    public void ReplayGame()
-    {
-        // 1. Lấy tên Scene đang hoạt động
-        string currentSceneName = SceneManager.GetActiveScene().name; 
-        Time.timeScale = 1f; 
-        SceneManager.LoadScene(currentSceneName);   
-    }
+ 
 
     // Update is called once per frame
     void Update()
