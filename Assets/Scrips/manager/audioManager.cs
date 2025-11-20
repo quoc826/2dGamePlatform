@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class audioManager : MonoBehaviour
 {
@@ -25,30 +26,33 @@ public class audioManager : MonoBehaviour
     }
 
 
-
+    
 
     [Header("Audio Sources")]
 
     public AudioSource musicBackground;
     public AudioSource musicBackgroundMenu;
-    public AudioSource buttonSound;
     public AudioSource gunSound;
 
-    public void PlayMusicBackgroundMenu(AudioClip clip)
+    public void SetPlayMusicBackgroundMenu(float volume)
     {
-        musicBackgroundMenu.PlayOneShot(clip);
+        musicBackgroundMenu.volume = volume;
     }
 
-    public void PlayMusicSource(AudioClip clip)
+
+    public void SetMusicBackgroundVolume(float volume)
     {
-        musicBackground.PlayOneShot(clip);
+        musicBackground.volume = volume;
+    }
+    
+    public void SetMusicBackgroundMenuVolume(float volume)
+    {
+        musicBackgroundMenu.volume = volume;
     }
 
-    public void PlayGunSound(AudioClip clip)
+    public void SetPlayGunSound(AudioClip clip)
     {
         gunSound.PlayOneShot(clip);
     }
-
-
 
 }

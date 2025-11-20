@@ -27,7 +27,7 @@ public class bullest : MonoBehaviour
             IcanTakeDamge damageAble = collision.gameObject.GetComponent<IcanTakeDamge>();
             if (audioManager.Instance != null && shooting != null)
             {
-                audioManager.Instance.PlayGunSound(shooting);
+                audioManager.Instance.SetPlayGunSound(shooting);
             }
             if (damageAble != null)
             {

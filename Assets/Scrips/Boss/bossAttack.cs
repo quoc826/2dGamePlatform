@@ -10,9 +10,9 @@ public class bossAttack : MonoBehaviour
     private bossAI bossAi;
 
     [Header("damageAttack")]
-    public int damage_1 = 30;
-    public int damage_2 = 30;
-    public int damage_3 = 50;
+    public int damage_1 = 5;
+    public int damage_2 = 10;
+    public int damage_3 = 20;
 
     [Header("AttackArea")]
     public Transform pointAttack;
@@ -115,7 +115,7 @@ public class bossAttack : MonoBehaviour
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(pointAttack.position, rangeAttack, playerLayer);
 
         // chờ 4s độ dài animation
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(0.5f);
 
         // gây sát thương
         foreach (Collider2D playerHit in hitPlayer)
