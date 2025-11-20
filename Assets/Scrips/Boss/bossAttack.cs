@@ -49,7 +49,7 @@ public class bossAttack : MonoBehaviour
         if (pointAttack == null)
             return;
 
-
+        //Collider player nam trong vòng tròn sẽ lưu vào biến hitPlayerCheck
         Collider2D hitPlayerCheck = Physics2D.OverlapCircle(pointAttack.position, rangeAttack, playerLayer);
 
         if (hitPlayerCheck != null && Time.time >= nextAttackTime)
@@ -78,8 +78,6 @@ public class bossAttack : MonoBehaviour
     }
 
 
-
-
     private int AttackRandom()
     {
         int randomAttack = Random.Range(0, 4);
@@ -100,8 +98,6 @@ public class bossAttack : MonoBehaviour
 
         else
         {
-
-
             anim.SetBool(isAttack3Hash, true);
             curretDamage = damage_3;
         }
@@ -113,11 +109,15 @@ public class bossAttack : MonoBehaviour
     IEnumerator Attack()
     {
 
-        int damageToDeal = AttackRandom();
+        int damageToDeal = AttackRandom(); // random attack
 
 
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(pointAttack.position, rangeAttack, playerLayer);
+
+        // chờ 4s độ dài animation
         yield return new WaitForSeconds(4.0f);
+
+        // gây sát thương
         foreach (Collider2D playerHit in hitPlayer)
         {
             Debug.Log("Player detected: ");

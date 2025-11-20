@@ -59,12 +59,13 @@ public class bossAI : MonoBehaviour
         {
             anim.SetBool(isWalkHash, false);
             CheckFlip();
-
         }
 
         else if (distanceToPlayer < detectionRange)
         {
             anim.SetBool(isWalkHash, true);
+
+            //duy chuyen mot diem tu vi tri hien tai den vi tri cua player
             transform.position = Vector2.MoveTowards(
                 transform.position,
                 player.position,
@@ -72,7 +73,6 @@ public class bossAI : MonoBehaviour
             );
             CheckFlip();
         }
-
         else
         {
             anim.SetBool(isWalkHash, false);
@@ -102,13 +102,10 @@ public class bossAI : MonoBehaviour
     }
 
 
-
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
-
 
 }
